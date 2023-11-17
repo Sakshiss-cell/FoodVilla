@@ -1,0 +1,286 @@
+
+*{
+    /* background-color: black; */
+    /* color: white; */
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #F5F5F5; /* Dark grey/black background */
+    color: black; /* White text color */
+    /* Accent color for specific elements (example: links, icons, etc.) */
+  }
+  
+  /* Example: applying an accent color to links within the header */
+  .header a {
+    color: #FFA500; 
+    /* Other link styles if needed */
+  }
+
+/* 
+
+
+
+/* Hamburger menu icon styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    /* z-index: 1; */
+  }
+  
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* Change the color to white */
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rest of your styles */
+  
+  
+  /* Navigation links styles */
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .nav-links li {
+    /* margin-right: 20px; */
+    list-style: none;
+    font-size: 32px;
+  }
+  
+  /* Media query for responsiveness */
+  /* @media screen and (min-width: 325px) { */
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #f9f9f9;
+      padding: 20px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex:1
+    }
+  
+    .nav-links.open {
+      display: flex;
+      position: fixed;
+      top: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    
+      height: 100vh;
+    }
+    .nav-links.close {
+      /* display: none; */
+     
+    }
+  /* } */
+  
+
+
+/* input */
+.search-container{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color:  #F5F5F5;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    margin: 20px 0px 20px 0px;
+}
+input{
+
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.468);
+    border-radius: 10px;
+
+    
+}
+input:focus {
+    color: rgb(15, 14, 14);
+    border-color: #CCCCCC;
+  }
+button{
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(177, 174, 174);
+}
+
+/* body card */
+
+.card-container{
+    background-color:  #F5F5F5;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.card-container a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+.card{
+    margin: 10px;
+    width: 200px;
+    border: 1px solid rgb(219, 215, 215);
+    padding: 20px;
+    overflow:hidden;
+    /* height: 300px; */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+     gap: 20px;
+    flex-direction: column;
+}
+.ratings{
+  font-weight: bold;
+}
+.card img{
+    width: 100%;  
+}
+
+
+
+/* shimmer */
+
+.shimmer-card{
+    width: 200px;
+    height: 220px;
+    background-color: rgba(244, 235, 235, 0.176);
+    margin: 10px;
+}
+
+.shimmer-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+/* footer */
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;      
+  background:rgb(226, 228, 231)
+  }
+  
+  .footer-content {
+    margin-bottom: 20px;
+    padding: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+    
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+ 
+  }
+  .social-icons a{
+    text-decoration: none;
+    opacity: .7;
+    color: #97825b;
+    padding: 5px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    /* background-color: black; */
+  }
+
+ .thank{
+    opacity: .5;
+  }
+
+  
+
+
+/* resturant menu */
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:12px
+}
+
+ul>li{
+  list-style: none;
+  border-bottom: 1px dotted darkolivegreen ;
+}
+
+.addbtn{
+    width: 50px;
+}
+
+/* instamart */
+
+.instacontainer{
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid white;
+}

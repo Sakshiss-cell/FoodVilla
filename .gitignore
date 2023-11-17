@@ -1,0 +1,18 @@
+# Dependency directories
+/node_modules
+
+# Built output
+/dist
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache and logs
+.cache
+log.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
